@@ -5,10 +5,16 @@ vraag4 = input("Bent u in bezit van een Diploma MBO-4 ondernemen? yes or no: ")
 vraag5 = input("Bent u in bezit van een geldig Vrachtwagen rijbewijs? yes or no:")
 vraag6 = input("Ben u in bezit van een hoge hoed? yes or no:")
 vraag7 = input("Bent u een man? yes or no: ")
-vraag8 = int(input("Zoja hoe breed is u snor in cm (bent u een vrouw type: 0):  "))
-vraag9 = input("Bent u een vrouw? yes or no: ")
-vraag10 = input("Zoja is u haar rood en krullig? yes or no: ")
-vraag11 = int(input("Zoja hoelang draag u uw haar in cm?(bent u een man type: 0): "))
+if vraag7 =="yes":
+    vraag20 = input("Heeft u een snor? yes or no: ")
+    if vraag20 == "yes":
+        vraag8 = int(input("Zoja hoe breed is u snor in cm:  "))
+else:
+    vraag9 = input("Bent u een vrouw? yes or no: ")
+    if vraag9 == "yes":
+        vraag10 = input("Zoja is u haar rood en krullig? yes or no: ")
+        if vraag10 == "yes":
+            vraag11 = int(input("Zoja hoelang draag u uw haar in cm?(bent u een man type: 0): "))
 vraag12 = int(input("Hoelang bent u in cm?: "))
 vraag13 = int(input("Hoe zwaar weegt u in hele kg?: "))
 vraag14 = input("Heeft u het certificaat “Overleven met gevaarlijk personeel”? yes or no: ")
